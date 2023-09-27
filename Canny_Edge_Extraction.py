@@ -98,17 +98,17 @@ def Canny_detector(img, weak_th = None, strong_th = None):
 	# finally returning the magnitude of
 	# gradients of edges
 	return mag
-#Modify your path!
+# Modify your path!
 file_path=''
 frame = cv2.imread(file_path)
 canny_img = Canny_detector(frame)
 min_val = np.min(canny_img)
 max_val = np.max(canny_img)
-#Used to add contrast to the extracted edges.
+# Used to add contrast to the extracted edges.
 canny_img_contrast = cv2.normalize(canny_img, None, 0, 255, cv2.NORM_MINMAX)
 canny_img_contrast = cv2.convertScaleAbs(canny_img_contrast)
 frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 res = np.hstack((frame_gray, canny_img))
-#Modify your path!
+# Modify your path!
 result_path=''
 cv2.imwrite(result_path, res)

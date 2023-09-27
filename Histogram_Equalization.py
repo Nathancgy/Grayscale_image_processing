@@ -3,7 +3,8 @@ import cv2 as cv
 from matplotlib import pyplot as plt
 
 # Read the image in grayscale
-img = cv.imread('/Users/nathanchen/Downloads/test4.png', cv.IMREAD_GRAYSCALE)
+# Modify your path!
+img = cv.imread('', cv.IMREAD_GRAYSCALE)
 
 # Decrease the grayscale values by reducing the pixel intensities
 darkened_img = img * 0.8  # Adjust the multiplication factor (0.6 in this case)
@@ -18,4 +19,5 @@ equ = cv.equalizeHist(darkened_img)
 res = np.hstack((darkened_img, equ))
 
 # Save the result, or combine
-cv.imwrite('/Users/nathanchen/Downloads/res4.png', res)
+# Modify your path!
+cv.imwrite('', res)
