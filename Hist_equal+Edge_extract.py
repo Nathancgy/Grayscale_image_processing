@@ -112,6 +112,8 @@ max_val = np.max(canny_img)
 canny_img_contrast = cv2.normalize(canny_img, None, 0, 255, cv2.NORM_MINMAX)
 canny_img_contrast = cv2.convertScaleAbs(canny_img_contrast)
 frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+# Compare the effects.
 res = np.hstack((frame_gray, canny_img))
 
 # Modify your path!
