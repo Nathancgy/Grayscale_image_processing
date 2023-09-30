@@ -3,5 +3,5 @@ This code implements histogram equalization and canny edge extraction algorithms
 
 * Based on Open-cv modules.
 
-
+# Combination of Historgram Equalizaiton -> Canny Edge Extraction.
 ![alt text](https://github.com/Nathancgy/Grayscale_image_processing/blob/main/images/combine.png?raw=true)
